@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css"> 
+    <title>WebSocket-project</title>
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
+    <!-- <h1>Задание 3 <br>
+        1.Реализовать чат на основе эхо-сервера wss://echo-ws-service.herokuapp.com. <br>
+        Интерфейс состоит из input, куда вводится текст сообщения, и кнопки «Отправить». <br>        
+        При клике на кнопку «Отправить» сообщение должно появляться в окне переписки. <br>        
+        Эхо-сервер будет отвечать вам тем же сообщением, его также необходимо выводить в чат: <br> <br>
+        2.Добавить в чат механизм отправки геолокации: <br>
+        При клике на кнопку «Геолокация» необходимо отправить данные серверу и вывести в чат ссылку <br>
+        на https://www.openstreetmap.org/ с вашей геолокацией. <br>
+        Сообщение, которое отправит обратно эхо-сервер, выводить не нужно.<br><br>
+    </h1> -->
+
+
+    <button class="support-button">Открыть чат</button>
+
+    <div class="chat-box">
+      <h2>Чат с поддержкой</h2>
+      <button class="close-button">&times;</button>
+      <div class="wrap">
+        <div class="message">
+          <p>Привет! Чем могу помочь?</p>
+        </div>
+        <div class="message">
+          <p>Буду рад ответить на ваши вопросы! :)</p>
+        </div>
+      </div>
+      <div class="input-field">
+        <input type="text" id="input" placeholder="Введите сообщение..." />
+        <button class="send-button">Отправить сообщение</button>
+        <button
+          class="send-geolocation-button"
+          title="Click для отправки вашей геолокации"
+        >
+          Отправить мою геолокацию
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
