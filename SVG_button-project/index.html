@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css"> 
+    <title>SVG_button-project</title>
+    <script defer src="./script/script.js"></script> 
+  </head>
+  <body>
+   
+    <!-- <h1>
+      Работа с SVG - задание 1. <br />
+      Сверстайте кнопку, которая будет содержать в себе icon_1(как в примере в
+      последнем видео).<br />
+      При клике на кнопку иконка должна меняться на icon_2. <br />
+      Повторный клик меняет иконку обратно.
+    </h1> -->
+
+    <button class="btn j-btn-test" onclick="toggleIcon(this)">
+      <div class="btn_text">Смена иконки по клику</div>
+
+      <!-- для icon_1 -->
+      <div class="btn_icon_1">
+        <!--   начало вставки SVG иконки   -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-arrow-clockwise"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+          />
+          <path
+            d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+          />
+        </svg>
+        <!--   конец вставки SVG иконки   -->
+      </div>
+
+      <!-- для icon_2 -->
+      <div class="btn_icon_2">
+        <!--   начало вставки SVG иконки   -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-bounding-box"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2zm6 1v2h2v6h-2v2H5v-2H3V5h2V3zm1-2h3v3h-3zm3 11v3h-3v-3zM4 15H1v-3h3zM1 4V1h3v3z"
+          />
+        </svg>
+        <!--   конец вставки SVG иконки   -->
+      </div>
+    </button>
+  </body>
+</html>
